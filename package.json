@@ -1,5 +1,5 @@
 {
-  "name": "simpl-select",
+  "name": "ts-select",
   "version": "1.0.0",
   "description": "typescript custom select for web pages",
   "main": "index.ts",
