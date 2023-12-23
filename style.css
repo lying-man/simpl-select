@@ -1,0 +1,176 @@
+/* select */
+.custom-select {
+    width: 100%;
+    position: relative;
+}
+
+/* theming */
+/* dark */
+.custom-select.dark .custom-select-header { background: rgb(12, 12, 12); }
+
+.custom-select.dark .custom-select-header:focus {
+    background: rgb(63, 63, 63);
+    transition: all .2s ease;
+}
+
+.custom-select.dark .custom-select-header:hover {
+    transform: scale(1.005);
+    transition: all .2s ease;
+}
+
+.custom-select.dark .custom-select-header-title { color: #e2e2e2; }
+.custom-select.dark .custom-select-body { background: rgb(12, 12, 12); }
+.custom-select.dark .custom-select-body-item { background: rgb(12, 12, 12); color: #e2e2e2; }
+
+.custom-select.dark .custom-select-body-item.active {
+    background: rgb(63, 63, 63);
+    transition: all .2s ease;
+}
+
+.custom-select.dark .custom-select-body-item:focus {
+    background: rgb(63, 63, 63);
+    transition: all .2s ease;
+}
+
+.custom-select.dark .custom-select-body-item:hover {
+    background: rgb(63, 63, 63);
+    transition: all .2s ease;
+}
+
+/* light */
+.custom-select.light .custom-select-header { background: #eeeeee; }
+
+.custom-select.light .custom-select-header:focus {
+    background: #d8d8d8;
+    transition: all .2s ease;
+}
+
+.custom-select.light .custom-select-header:hover {
+    transform: scale(1.005);
+    transition: all .2s ease;
+}
+
+.custom-select.light .custom-select-header-title { color: #303030; }
+.custom-select.light .custom-select-body { background: #eeeeee; }
+.custom-select.light .custom-select-body-item { background: #eeeeee; color: #303030; }
+
+.custom-select.light .custom-select-body-item.active {
+    background: #d8d8d8;
+    transition: all .2s ease;
+}
+
+.custom-select.light .custom-select-body-item:focus {
+    background: #d8d8d8;
+    transition: all .2s ease;
+}
+
+.custom-select.light .custom-select-body-item:hover {
+    background: #d8d8d8;
+    transition: all .2s ease;
+}
+
+.custom-select-header {
+    padding: 10px 12px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    outline: none;
+    transition: all .2s ease;
+}
+
+.custom-select-header-img {
+    width: 15px;
+    height: 15px;
+    transform: rotate(0deg);
+    transition: all .2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.custom-select.show .custom-select-header-img {
+    transform: rotate(180deg);
+    transition: all .2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.custom-select-header-title {
+    font-size: 18px;
+}
+
+.custom-select-body {
+    position: absolute;
+    top: calc(100% + 8px);
+    width: 100%;
+    left: 0;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+/* animations */
+/* default */
+.custom-select-body.default {
+    display: none;
+}
+
+.custom-select.show.default .custom-select-body {
+    display: block;
+}
+
+/* slide */
+.custom-select-body.slide {
+    transform: translateY(20%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.custom-select.show.slide .custom-select-body {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+/* opacity */
+.custom-select-body.opacity {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.custom-select.show.opacity .custom-select-body {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+/* scale */
+.custom-select-body.scale {
+    transform: scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.custom-select.show.scale .custom-select-body {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+/* items style */
+.custom-select-body-item {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    transition: all .2s ease;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "simpl-select",
+  "version": "1.0.0",
+  "description": "typescript custom select for web pages",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["select", "custom-select", "custom", "simple-select"],
+  "author": "blank_brain",
+  "license": "ISC"
+}
