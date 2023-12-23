@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "typescript custom select for web pages",
   "main": "index.ts",
+  "repository": "https://github.com/lying-man/simpl-select",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
